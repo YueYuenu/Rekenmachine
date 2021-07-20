@@ -175,7 +175,10 @@ namespace Rekenmachine
 
 		private void btnEuro_Click(object sender, EventArgs e)
 		{
-			txtInput.Text = txtInput.Text += "€";   //iets doen om resultaat te printen met $xx,yy  (https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings#currency-format-specifier-c)
+			decimal decResult = (decimal)result;
+			this.txtInput.Text = "";
+			txtInput.Text = txtInput.Text += "€" + decResult;   //iets doen om resultaat te printen met $xx,yy  (https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings#currency-format-specifier-c)
+
 		}
 
 		private void txtInput_TextChanged(object sender, EventArgs e)
