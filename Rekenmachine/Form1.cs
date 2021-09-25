@@ -174,7 +174,7 @@ namespace Rekenmachine
 
 		private void btnPercentage_Click(object sender, EventArgs e)
 		{
-
+		//divide by 100, aka move decimal 2 spots to the left, 120%=1.2  50%=0.5 etc
 		}
 
 		private void btnEuro_Click(object sender, EventArgs e)
